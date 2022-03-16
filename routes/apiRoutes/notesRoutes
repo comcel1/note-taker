@@ -1,19 +1,10 @@
 const router = require("express").Router();
 const { notes } = require("../../db/db.json");
-const { createNewNote } = require("../../lib/notes");
+const { createNewNote, deleteNote } = require("../../lib/notes");
 
 // api/notes (route)
 router.get("/", (req, res) => {
-  res.json({ message: "success" });
-});
-
-router.get("/:id", (req, res) => {
-  const result = findById(req.params.id, notes);
-  if (result) {
-    res.json(result);
-  } else {
-    res.send(404);
-  }
+  res.json(notes);
 });
 
 router.post("/", (req, res) => {
@@ -23,11 +14,16 @@ router.post("/", (req, res) => {
   } else {
     req.body.id = (Number(notes[notes.length - 1].id) + 1).toString();
   }
-
+  ``;
   // add note to json file and notes array in this function
   const note = createNewNote(req.body, notes);
   // shows new note that we created
   res.json(note);
+});
+
+router.delete("/:id", (req, res) => {
+  const newNotes = deleteNote(req.params.id, notes);
+  res.json(newNotes);
 });
 
 module.exports = router;
