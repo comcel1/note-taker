@@ -8,6 +8,11 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ---
 
+## Links
+
+Github Repository: https://github.com/comcel1/note-taker </br>
+Heroku Deployment: https://warm-island-39326.herokuapp.com/
+
 ## Criteria
 
 GIVEN a note-taking application</br>
@@ -29,7 +34,5 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ### Questions
 
 Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email.
-
-[Github](https://github.com/comcel1/note-taker)
 
 paulnelson@comcast.net
