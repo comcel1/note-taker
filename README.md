@@ -28,6 +28,6 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 Please don't hesitate to reach out if you have any questions or comments. You can reach me through github or directly via email.
 
-[Github](https://github.com/comcel1)
+[Github](https://github.com/comcel1/note-taker)
 
 paulnelson@comcast.net
